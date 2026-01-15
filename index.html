@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт-резюме Никиты Брюханова, студента-разработчика. Angular, DevOps, Информационная безопасность. Портфолио проектов и сертификатов.">
+    <meta name="keywords" content="Angular, DevOps, информационная безопасность, разработка, портфолио, резюме, студент, проекты">
+    <meta name="author" content="Никита Брюханов">
+    <title>Никита Брюханов | Студент-разработчик</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Кнопка переключения темы -->
+    <button class="theme-toggle" aria-label="Переключить тему">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-top" aria-label="Вернуться наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-text">Н.Брюханов</span>
+                <span class="brand-subtext">Портфолио</span>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Меню навигации">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#courses" class="nav-link">Курсы</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#practice" class="nav-link">Практика</a></li>
+                <li><a href="#self-dev" class="nav-link">Саморазвитие</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Шапка (Header) -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <div class="profile-frame">
+                        <img src="assets/images/profile.jpg" 
+                             alt="Никита Брюханов" 
+                             class="profile-img"
+                             onerror="this.src='assets/images/placeholder.jpg'">
+                        <div class="profile-badge">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        <span>Доступен для проектов</span>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <div class="badges">
+                        <span class="badge student">
+                            <i class="fas fa-graduation-cap"></i> Студент
+                        </span>
+                        <span class="badge developer">
+                            <i class="fas fa-laptop-code"></i> Разработчик
+                        </span>
+                        <span class="badge security">
+                            <i class="fas fa-shield-alt"></i> Безопасность
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">Никита Анатольевич Брюханов</h1>
+                    
+                    <div class="specialization">
+                        <h2 class="specialization-title">
+                            Студент-разработчик: <span class="highlight">Angular</span> • <span class="highlight">DevOps</span> • <span class="highlight">Информационная безопасность</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="sell-pitch">
+                        <p>
+                            <i class="fas fa-rocket"></i>
+                            Создаю надёжные веб-приложения и автоматизирую инфраструктуру.
+                        </p>
+                        <p>
+                            <i class="fas fa-bolt"></i>
+                            Умею учиться быстро и решать нетривиальные задачи.
+                        </p>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> Смотреть проекты
+                        </a>
+                        <a href="#courses" class="btn btn-secondary">
+                            <i class="fas fa-certificate"></i> Мои сертификаты
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="contact-brief">
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <span>ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина»</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-book"></i>
+                            <span>09.02.07 «Информационные системы и программирование»</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Выпуск 2025 года</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#courses" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Раздел: Курсы -->
+        <section id="courses" class="section courses-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-graduation-cap"></i> Пройденные курсы
+                    </h2>
+                    <p class="section-subtitle">Сертификаты и полученные навыки</p>
+                </div>
+                
+                <div class="courses-filter">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="sber">СберУниверситет</button>
+                    <button class="filter-btn" data-filter="yandex">Яндекс</button>
+                    <button class="filter-btn" data-filter="vk">VK Образование</button>
+                    <button class="filter-btn" data-filter="other">Другие</button>
+                </div>
+                
+                <div class="courses-grid">
+                    <!-- Курс 1 -->
+                    <div class="course-card" data-category="sber">
+                        <div class="course-header">
+                            <div class="course-badge sber">
+                                <i class="fas fa-university"></i>
+                                СберУниверситет
+                            </div>
+                            <h3 class="course-title">Промпт-инжиниринг и работа с LLM</h3>
+                        </div>
+                        <div class="course-body">
+                            <p class="course-description">
+                                Изучение работы с большими языковыми моделями, техники промпт-инжиниринга, RAG архитектуры
+                            </p>
+                            <div class="course-skills">
+                                <span class="skill-tag">GigaChat</span>
+                                <span class="skill-tag">Промпт-инжиниринг</span>
+                                <span class="skill-tag">LLM</span>
+                                <span class="skill-tag">RAG</span>
+                                <span class="skill-tag">GigaChain</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-date">
+                                <i class="far fa-calendar"></i> 2024
+                            </div>
+                            <button class="btn-view-certificate" data-certificate="cert1">
+                                <i class="fas fa-expand"></i> Просмотреть сертификат
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Курс 2 -->
+                    <div class="course-card" data-category="yandex">
+                        <div class="course-header">
+                            <div class="course-badge yandex">
+                                <i class="fab fa-yandex"></i>
+                                Яндекс
+                            </div>
+                            <h3 class="course-title">Frontend-разработчик</h3>
+                        </div>
+                        <div class="course-body">
+                            <p class="course-description">
+                                Современная фронтенд-разработка: JavaScript, TypeScript, React, Vue, архитектура приложений
+                            </p>
+                            <div class="course-skills">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">SPA</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-date">
+                                <i class="far fa-calendar"></i> 2023
+                            </div>
+                            <button class="btn-view-certificate" data-certificate="cert2">
+                                <i class="fas fa-expand"></i> Просмотреть сертификат
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Курс 3 -->
+                    <div class="course-card" data-category="vk">
+                        <div class="course-header">
+                            <div class="course-badge vk">
+                                <i class="fab fa-vk"></i>
+                                VK Образование
+                            </div>
+                            <h3 class="course-title">DevOps: CI/CD и инфраструктура</h3>
+                        </div>
+                        <div class="course-body">
+                            <p class="course-description">
+                                Автоматизация процессов разработки, контейнеризация, оркестрация и мониторинг
+                            </p>
+                            <div class="course-skills">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">GitLab CI/CD</span>
+                                <span class="skill-tag">Terraform</span>
+                                <span class="skill-tag">GitOps</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-date">
+                                <i class="far fa-calendar"></i> 2023
+                            </div>
+                            <button class="btn-view-certificate" data-certificate="cert3">
+                                <i class="fas fa-expand"></i> Просмотреть сертификат
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Курс 4 -->
+                    <div class="course-card" data-category="other">
+                        <div class="course-header">
+                            <div class="course-badge other">
+                                <i class="fas fa-code"></i>
+                                Код будущего
+                            </div>
+                            <h3 class="course-title">Информационная безопасность</h3>
+                        </div>
+                        <div class="course-body">
+                            <p class="course-description">
+                                Основы информационной безопасности, сетевые атаки и защита, криптография
+                            </p>
+                            <div class="course-skills">
+                                <span class="skill-tag">Сетевая безопасность</span>
+                                <span class="skill-tag">DDoS-защита</span>
+                                <span class="skill-tag">Шифрование</span>
+                                <span class="skill-tag">DevSecOps</span>
+                                <span class="skill-tag">Пентест</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-date">
+                                <i class="far fa-calendar"></i> 2024
+                            </div>
+                            <button class="btn-view-certificate" data-certificate="cert4">
+                                <i class="fas fa-expand"></i> Просмотреть сертификат
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Проекты -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-project-diagram"></i> Мои проекты
+                    </h2>
+                    <p class="section-subtitle">Реализованные решения и конкурсные работы</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Проект 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Документооборот в команде</h3>
+                            <div class="project-tags">
+                                <span class="project-tag angular">Angular</span>
+                                <span class="project-tag node">Node.js</span>
+                                <span class="project-tag mongodb">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Полноценная система документооборота с возможностью совместной работы,
+                                версионностью документов, системой уведомлений и ролевой моделью доступа.
+                            </p>
+                            <div class="project-role">
+                                <strong>Роль:</strong> Full-stack разработчик
+                            </div>
+                            <ul class="project-tasks">
+                                <li><i class="fas fa-check"></i> Разработка архитектуры системы</li>
+                                <li><i class="fas fa-check"></i> Создание REST API на Node.js</li>
+                                <li><i class="fas fa-check"></i> Реализация фронтенда на Angular</li>
+                                <li><i class="fas fa-check"></i> Настройка CI/CD pipeline</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/document-flow" 
+                                   target="_blank" 
+                                   class="project-link">
+                                    <i class="fab fa-github"></i> Репозиторий
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Демо
+                                </a>
+                            </div>
+                            <div class="project-date">
+                                <i class="far fa-calendar"></i> 2024
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Проект 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Система мониторинга инфраструктуры</h3>
+                            <div class="project-tags">
+                                <span class="project-tag devops">DevOps</span>
+                                <span class="project-tag docker">Docker</span>
+                                <span class="project-tag k8s">Kubernetes</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Автоматизированная система мониторинга и алертинга для облачной инфраструктуры
+                                с использованием Prometheus, Grafana и кастомных экспортеров.
+                            </p>
+                            <div class="project-role">
+                                <strong>Роль:</strong> DevOps инженер
+                            </div>
+                            <ul class="project-tasks">
+                                <li><i class="fas fa-check"></i> Настройка Prometheus и Grafana</li>
+                                <li><i class="fas fa-check"></i> Создание кастомных экспортеров</li>
+                                <li><i class="fas fa-check"></i> Автоматизация развертывания</li>
+                                <li><i class="fas fa-check"></i> Настройка алертинга</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/monitoring-system" 
+                                   target="_blank" 
+                                   class="project-link">
+                                    <i class="fab fa-github"></i> Репозиторий
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-file-pdf"></i> Документация
+                                </a>
+                            </div>
+                            <div class="project-date">
+                                <i class="far fa-calendar"></i> 2023
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Проект 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Конкурс "Система"</h3>
+                            <div class="project-tags">
+                                <span class="project-tag competition">Конкурс</span>
+                                <span class="project-tag security">Безопасность</span>
+                                <span class="project-tag analysis">Анализ</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Участие в конкурсе с проектом по анализу уязвимостей веб-приложений.
+                                Разработана методология тестирования и набор автоматизированных скриптов.
+                            </p>
+                            <div class="project-role">
+                                <strong>Роль:</strong> Аналитик безопасности
+                            </div>
+                            <ul class="project-tasks">
+                                <li><i class="fas fa-check"></i> Анализ уязвимостей OWASP Top 10</li>
+                                <li><i class="fas fa-check"></i> Разработка тест-кейсов</li>
+                                <li><i class="fas fa-check"></i> Создание отчета с рекомендациями</li>
+                                <li><i class="fas fa-check"></i> Презентация результатов</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/security-analysis" 
+                                   target="_blank" 
+                                   class="project-link">
+                                    <i class="fab fa-github"></i> Материалы
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-award"></i> Сертификат
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-file-powerpoint"></i> Презентация
+                                </a>
+                            </div>
+                            <div class="project-date">
+                                <i class="far fa-calendar"></i> 2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Практика -->
+        <section id="practice" class="section practice-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i> Производственная практика
+                    </h2>
+                    <p class="section-subtitle">Опыт работы в реальных проектах</p>
+                </div>
+                
+                <div class="practice-content">
+                    <div class="practice-card">
+                        <div class="practice-header">
+                            <div class="practice-badge">
+                                <i class="fas fa-building"></i>
+                                Люберецкий техникум им. Ю.А. Гагарина
+                            </div>
+                            <h3 class="practice-title">Разработка внутренней системы учета</h3>
+                        </div>
+                        
+                        <div class="practice-body">
+                            <div class="practice-period">
+                                <i class="far fa-calendar-alt"></i>
+                                <strong>Период:</strong> Июнь 2023 - Август 2023
+                            </div>
+                            
+                            <div class="practice-description">
+                                <h4>Задачи и выполненные работы:</h4>
+                                <ul class="practice-tasks">
+                                    <li>Разработка модуля учета оборудования</li>
+                                    <li>Создание системы отчетности</li>
+                                    <li>Интеграция с существующей инфраструктурой</li>
+                                    <li>Написание технической документации</li>
+                                </ul>
+                                
+                                <h4>Используемые технологии:</h4>
+                                <div class="practice-tech">
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">.NET Core</span>
+                                    <span class="tech-tag">SQL Server</span>
+                                    <span class="tech-tag">Git</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                            </div>
+                            
+                            <div class="practice-reflections">
+                                <h4>Выводы и рефлексия:</h4>
+                                <p>
+                                    Практика позволила применить теоретические знания в реальном проекте,
+                                    научиться работать в команде и понимать жизненный цикл разработки ПО.
+                                    Особенно ценным был опыт взаимодействия с заказчиком и работа
+                                    с legacy-кодом.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="practice-footer">
+                            <a href="https://github.com/yourusername/practice-2023" 
+                               target="_blank" 
+                               class="btn btn-outline">
+                                <i class="fab fa-github"></i> Код проекта
+                            </a>
+                            <a href="https://yourusername.github.io/twine-novel/" 
+                               target="_blank" 
+                               class="btn btn-primary">
+                                <i class="fas fa-gamepad"></i> Интерактивная новелла (Twine)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Саморазвитие -->
+        <section id="self-dev" class="section selfdev-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-road"></i> Дорожная карта саморазвития
+                    </h2>
+                    <p class="section-subtitle">Направления обучения и прогресс</p>
+                </div>
+                
+                <div class="roadmap-container">
+                    <div class="roadmap">
+                        <!-- Frontend дорожка -->
+                        <div class="roadmap-track">
+                            <div class="track-header">
+                                <h3 class="track-title">
+                                    <i class="fab fa-angular"></i> Frontend Development
+                                </h3>
+                                <div class="track-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="progress-text">75%</span>
+                                </div>
+                            </div>
+                            <div class="track-skills">
+                                <div class="skill-item mastered">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>HTML5 / CSS3</span>
+                                </div>
+                                <div class="skill-item mastered">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Angular</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>RxJS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- DevOps дорожка -->
+                        <div class="roadmap-track">
+                            <div class="track-header">
+                                <h3 class="track-title">
+                                    <i class="fab fa-docker"></i> DevOps & Infrastructure
+                                </h3>
+                                <div class="track-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 60%"></div>
+                                    </div>
+                                    <span class="progress-text">60%</span>
+                                </div>
+                            </div>
+                            <div class="track-skills">
+                                <div class="skill-item mastered">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Kubernetes</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Terraform</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>GitLab CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Security дорожка -->
+                        <div class="roadmap-track">
+                            <div class="track-header">
+                                <h3 class="track-title">
+                                    <i class="fas fa-shield-alt"></i> Информационная безопасность
+                                </h3>
+                                <div class="track-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 50%"></div>
+                                    </div>
+                                    <span class="progress-text">50%</span>
+                                </div>
+                            </div>
+                            <div class="track-skills">
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Сетевая безопасность</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>DDoS-защита</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Шифрование</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>DevSecOps</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Пентестинг</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- AI дорожка -->
+                        <div class="roadmap-track">
+                            <div class="track-header">
+                                <h3 class="track-title">
+                                    <i class="fas fa-brain"></i> Генеративные модели
+                                </h3>
+                                <div class="track-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span class="progress-text">65%</span>
+                                </div>
+                            </div>
+                            <div class="track-skills">
+                                <div class="skill-item mastered">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>GigaChat API</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Промпт-инжиниринг</span>
+                                </div>
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Kandinsky 3.0</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>RAG системы</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Fine-tuning моделей</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 1C дорожка -->
+                        <div class="roadmap-track">
+                            <div class="track-header">
+                                <h3 class="track-title">
+                                    <i class="fas fa-calculator"></i> 1C: Предприятие
+                                </h3>
+                                <div class="track-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 40%"></div>
+                                    </div>
+                                    <span class="progress-text">40%</span>
+                                </div>
+                            </div>
+                            <div class="track-skills">
+                                <div class="skill-item learning">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Платформа 1С</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Конфигурации</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Регистры сведений</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Бизнес-процессы</span>
+                                </div>
+                                <div class="skill-item planned">
+                                    <i class="far fa-circle"></i>
+                                    <span>Интеграции</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-legend">
+                        <div class="legend-item">
+                            <span class="legend-color mastered"></span>
+                            <span>Освоено</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color learning"></span>
+                            <span>Изучаю</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color planned"></span>
+                            <span>В планах</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел: Обо мне -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-user"></i> Обо мне
+                    </h2>
+                    <p class="section-subtitle">Профессиональная биография и навыки</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-bio">
+                        <h3 class="about-subtitle">Профессиональная биография</h3>
+                        <div class="bio-content">
+                            <p>
+                                Я студент ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина» по специальности 
+                                <strong>09.02.07 «Информационные системы и программирование»</strong>.
+                            </p>
+                            <p>
+                                С самого начала обучения увлёкся веб-разработкой и автоматизацией процессов.
+                                Особый интерес вызывают современные технологии и подходы к разработке ПО.
+                            </p>
+                            <p>
+                                Активно изучаю <strong>Frontend-разработку</strong> на Angular, 
+                                практикую <strong>DevOps</strong> подходы для автоматизации инфраструктуры,
+                                углубляюсь в вопросы <strong>информационной безопасности</strong> и 
+                                экспериментирую с <strong>генеративными моделями</strong>.
+                            </p>
+                            <p>
+                                Стремлюсь к созданию качественных, безопасных и масштабируемых решений,
+                                которые решают реальные бизнес-задачи.
+                            </p>
+                        </div>
+                        
+                        <div class="education-card">
+                            <h4><i class="fas fa-graduation-cap"></i> Образование</h4>
+                            <div class="education-item">
+                                <div class="education-header">
+                                    <h5>ГБПОУ МО «Люберецкий техникум имени Героя Советского Союза, лётчика–космонавта Ю.А. Гагарина»</h5>
+                                    <span class="education-period">2022 - 2025</span>
+                                </div>
+                                <p class="education-specialty">
+                                    <strong>Специальность:</strong> 09.02.07 «Информационные системы и программирование»
+                                </p>
+                                <p class="education-status">
+                                    <i class="fas fa-spinner"></i> Обучаюсь (выпуск 2025 года)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <h3 class="about-subtitle">Навыки и технологии</h3>
+                        
+                        <div class="skills-category">
+                            <h4><i class="fas fa-code"></i> Языки программирования</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>JavaScript</h5>
+                                        <p>ES6+, асинхронное программирование</p>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>TypeScript</h5>
+                                        <p>Статическая типизация, ООП</p>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>SQL</h5>
+                                        <p>Запросы, оптимизация, проектирование</p>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-terminal"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Bash</h5>
+                                        <p>Скрипты, автоматизация, системное администрирование</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h4><i class="fas fa-tools"></i> Инструменты и технологии</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag-lg angular">Angular</span>
+                                <span class="skill-tag-lg git">Git</span>
+                                <span class="skill-tag-lg docker">Docker</span>
+                                <span class="skill-tag-lg kubernetes">Kubernetes</span>
+                                <span class="skill-tag-lg terraform">Terraform</span>
+                                <span class="skill-tag-lg linux">Linux</span>
+                                <span class="skill-tag-lg cloud">Yandex Cloud</span>
+                                <span class="skill-tag-lg ai">GigaChat</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h4><i class="fas fa-users"></i> Soft Skills</h4>
+                            <div class="soft-skills">
+                                <div class="soft-skill">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <h5>Тайм-менеджмент</h5>
+                                        <p>Эффективное планирование и организация рабочего времени</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill">
+                                    <i class="fas fa-tasks"></i>
+                                    <div>
+                                        <h5>Дисциплина</h5>
+                                        <p>Системный подход к решению задач и самоорганизация</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill">
+                                    <i class="fas fa-handshake"></i>
+                                    <div>
+                                        <h5>Работа в команде</h5>
+                                        <p>Коммуникация, коллаборация и распределение задач</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-links">
+                    <h3 class="about-subtitle">Свяжитесь со мной</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" 
+                           target="_blank" 
+                           class="social-link github"
+                           aria-label="GitHub профиль">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://github.com/yourusername/projects" 
+                           target="_blank" 
+                           class="social-link projects"
+                           aria-label="GitHub Projects">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="https://t.me/yourusername" 
+                           target="_blank" 
+                           class="social-link telegram"
+                           aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://vk.com/yourusername" 
+                           target="_blank" 
+                           class="social-link vk"
+                           aria-label="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                            <span>ВКонтакте</span>
+                        </a>
+                        <a href="mailto:your.email@example.com" 
+                           class="social-link email"
+                           aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал (Footer) -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">
+                        <i class="fas fa-rocket"></i> Никита Брюханов
+                    </h3>
+                    <p class="footer-text">
+                        Студент-разработчик, специализирующийся на Angular, DevOps и информационной безопасности.
+                        Стремлюсь к созданию качественных и безопасных IT-решений.
+                    </p>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Главная</a>
+                        <a href="#courses" class="footer-link">Курсы</a>
+                        <a href="#projects" class="footer-link">Проекты</a>
+                        <a href="#practice" class="footer-link">Практика</a>
+                        <a href="#self-dev" class="footer-link">Саморазвитие</a>
+                        <a href="#about" class="footer-link">Обо мне</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-subtitle">Контактная информация</h4>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            ГБПОУ МО «Люберецкий техникум имени Героя Советского Союза, лётчика–космонавта Ю.А. Гагарина»
+                        </p>
+                        <p>
+                            <i class="fas fa-graduation-cap"></i>
+                            Специальность: 09.02.07 «Информационные системы и программирование»
+                        </p>
+                        <p>
+                            <i class="fas fa-calendar"></i>
+                            Год окончания обучения: 2025
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links-external">
+                    <h4 class="footer-subtitle">Ссылки</h4>
+                    <div class="external-links">
+                        <a href="https://github.com/yourusername/resume-portfolio" 
+                           target="_blank" 
+                           class="external-link">
+                            <i class="fab fa-github"></i> Репозиторий проекта
+                        </a>
+                        <a href="https://yourusername.github.io/resume-portfolio/" 
+                           target="_blank" 
+                           class="external-link">
+                            <i class="fas fa-external-link-alt"></i> Опубликованная версия
+                        </a>
+                        <a href="assets/documents/resume.pdf" 
+                           target="_blank" 
+                           class="external-link">
+                            <i class="fas fa-file-pdf"></i> Скачать резюме (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>
+                        © 2025 Никита Брюханов, ГБПОУ МО «Люберецкий техникум имени Героя Советского Союза, лётчика–космонавта Ю.А. Гагарина»
+                    </p>
+                    <p class="footer-year">
+                        Год выпуска: 2025
+                    </p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/yourusername" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://vk.com/yourusername" target="_blank" aria-label="ВКонтакте">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для сертификатов -->
+    <div class="modal" id="certificateModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3 class="modal-title">Сертификат</h3>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Сертификат" class="modal-certificate" id="modalCertificate">
+                <div class="modal-info">
+                    <h4 id="modalCourseTitle"></h4>
+                    <p id="modalCourseDescription"></p>
+                    <div class="modal-skills" id="modalCourseSkills"></div>
+                    <a href="#" class="btn btn-primary" id="modalCertificateLink" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Открыть оригинал
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
