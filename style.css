@@ -151,7 +151,7 @@ body {
     font-weight: 500;
 }
 
-/* ===== СЕРТИФИКАТЫ (НОВЫЙ БЛОК) ===== */
+/* ===== СЕРТИФИКАТЫ ===== */
 .certificates {
     background-color: #f8f9fa;
 }
@@ -185,9 +185,6 @@ body {
     background: #f0f0f0;
     aspect-ratio: 4 / 3;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .certificate-image {
@@ -196,14 +193,6 @@ body {
     object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
-}
-
-.certificate-image-wrapper::before {
-    content: "📄";
-    font-size: 60px;
-    position: absolute;
-    opacity: 0.3;
-    z-index: 1;
 }
 
 .certificate-card:hover .certificate-image {
@@ -222,7 +211,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
 }
 
 .certificate-image-wrapper:hover .certificate-overlay {
@@ -578,4 +566,6 @@ body {
     .certificate-number {
         display: block;
         margin-top: 8px;
-        text-align:
+        text-align: center;
+    }
+}
