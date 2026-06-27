@@ -670,4 +670,61 @@
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <span class="section-tag">О себе</span>
-        <h2 class="section-title">Обо <span
+        <h2 class="section-title">Обо <span>мне</span></h2>
+        <p class="section-subtitle">Профессиональная биография и навыки</p>
+      </div>
+      <div class="about-content">
+        <div data-aos="fade-right">
+          <div class="about-card"><h3>👋 Привет!</h3><p>Я студент ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина» по специальности 09.02.07 «Информационные системы и программирование».</p><p>С самого начала обучения увлёкся веб-разработкой и автоматизацией процессов. Особый интерес вызывают современные технологии и подходы к разработке ПО.</p><p>Активно изучаю Frontend-разработку на Angular, практикую DevOps подходы для автоматизации инфраструктуры, углубляюсь в вопросы информационной безопасности и экспериментирую с генеративными моделями.</p><p>Стремлюсь к созданию качественных, безопасных и масштабируемых решений, которые решают реальные бизнес-задачи.</p></div>
+          <div class="education-card"><h3>🎓 Образование</h3><div class="edu-item"><div class="edu-icon">🏛️</div><div><h4>ГБПОУ МО «Люберецкий техникум имени Героя Советского Союза, лётчика–космонавта Ю.А. Гагарина»</h4><p>2024 - 2027</p><p>09.02.07 «Информационные системы и программирование»</p><span class="edu-status">Обучаюсь (выпуск в 2027 году)</span></div></div></div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="skills-card"><h3>💻 Навыки</h3>
+            <div class="skill-group"><h4>Языки программирования</h4>
+              <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
+              <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+              <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div></div>
+              <div class="skill-item"><span class="skill-name">Bash</span><div class="skill-bar"><div class="skill-progress" style="width:60%"></div></div></div>
+            </div>
+            <div class="skill-group"><h4>Технологии</h4><div class="tech-tags"><span>Angular</span><span>React</span><span>Vue.js</span><span>Node.js</span><span>.NET Core</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>GitLab CI/CD</span><span>Prometheus</span><span>Grafana</span></div></div>
+            <div class="skill-group"><h4>Soft Skills</h4><div class="soft-skills"><span>🧠 Тайм-менеджмент</span><span>🎯 Дисциплина</span><span>🤝 Работа в команде</span><span>💬 Коммуникация</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div><p class="footer-name">Ибрагим Чопанов</p><p class="footer-desc">Студент-разработчик</p></div>
+        <div class="footer-social">
+          <a href="https://github.com/beliu777" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="mailto:beliu777@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Ибрагим Чопанов. Все права защищены.</p></div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 40 });
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    // close on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+    // scroll nav
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    });
+  </script>
+</body>
+</html>
