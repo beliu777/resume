@@ -596,6 +596,66 @@
       font-size: 1.1rem;
     }
 
+    /* ── styles for sites section ── */
+    .sites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .site-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px 28px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.02);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .site-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    }
+    .site-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      color: #2563eb;
+    }
+    .site-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .site-card p {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .site-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 28px;
+      background: #1e1e1e;
+      color: white;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: 0.25s;
+      border: none;
+      cursor: pointer;
+    }
+    .site-btn:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37,99,235,0.25);
+    }
+    .site-btn i {
+      font-size: 1rem;
+    }
+
     /* footer */
     .footer {
       background: white;
@@ -655,7 +715,7 @@
       .mobile-menu-btn { display: block; }
       .header-title { font-size: 2.4rem; }
       .header-education { flex-direction: column; gap: 12px; }
-      .courses-grid, .certificates-grid, .projects-grid { grid-template-columns: 1fr; }
+      .courses-grid, .certificates-grid, .projects-grid, .sites-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
       .header { padding: 120px 0 60px; }
@@ -673,6 +733,7 @@
         <li><a href="#certificates">Сертификаты</a></li>
         <li><a href="#projects">Проекты</a></li>
         <li><a href="#notes">Конспекты</a></li>
+        <li><a href="#sites">Сайты</a></li>
         <li><a href="#about">Обо мне</a></li>
       </ul>
       <button class="mobile-menu-btn" id="menuBtn" aria-label="Меню">☰</button>
@@ -897,6 +958,38 @@
               <i class="fas fa-info-circle"></i> Для просмотра может потребоваться вход в Google-аккаунт.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sites Section -->
+  <section class="section" id="sites">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Веб-проекты</span>
+        <h2 class="section-title">Мои <span>сайты</span></h2>
+        <p class="section-subtitle">Разработанные и опубликованные веб-ресурсы</p>
+      </div>
+      <div class="sites-grid">
+        <!-- Сайт 1: Миграционный пункт -->
+        <div class="site-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="site-icon"><i class="fas fa-passport"></i></div>
+          <h3>Миграционный пункт №3</h3>
+          <p>Информационный сайт с контактами, адресом и режимом работы миграционного пункта МВД в Люберцах.</p>
+          <a href="https://beliu777.github.io/site-praktiki/" target="_blank" class="site-btn">
+            <i class="fas fa-external-link-alt"></i> Перейти на сайт
+          </a>
+        </div>
+
+        <!-- Сайт 2: Регистрация -->
+        <div class="site-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="site-icon"><i class="fas fa-user-plus"></i></div>
+          <h3>Регистрация</h3>
+          <p>Страница регистрации с формой для создания аккаунта. Реализована на PythonAnywhere.</p>
+          <a href="http://beliu228.pythonanywhere.com" target="_blank" class="site-btn">
+            <i class="fas fa-external-link-alt"></i> Перейти на сайт
+          </a>
         </div>
       </div>
     </div>
