@@ -492,6 +492,110 @@
     }
     .soft-skills span { background: #eef2ff; color: #1e293b; }
 
+    /* ── styles for notes section ── */
+    .notes-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .note-card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.02);
+      transition: 0.2s;
+    }
+    .note-card:hover {
+      box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+    }
+    .note-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .note-header h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      flex: 1;
+    }
+    .note-header .toggle-icon {
+      font-size: 1.4rem;
+      transition: transform 0.3s;
+      color: #64748b;
+    }
+    .note-header .toggle-icon.open {
+      transform: rotate(180deg);
+    }
+    .note-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding-top: 0;
+    }
+    .note-body.open {
+      max-height: 3000px;
+      padding-top: 20px;
+    }
+    .note-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 12px 0;
+    }
+    .note-body th, .note-body td {
+      border: 1px solid #e2e8f0;
+      padding: 8px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .note-body th {
+      background: #f8fafc;
+      font-weight: 600;
+    }
+    .note-body ul, .note-body ol {
+      padding-left: 24px;
+      margin: 8px 0;
+    }
+    .note-body li {
+      margin-bottom: 4px;
+    }
+    .note-body .mark {
+      background: #fef9c3;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    .note-body p {
+      margin-bottom: 12px;
+    }
+    .note-body h4 {
+      margin: 16px 0 8px;
+      font-size: 1.1rem;
+    }
+    .note-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: #f1f5f9;
+      border-radius: 60px;
+      color: #2563eb;
+      font-weight: 600;
+      transition: 0.2s;
+      border: 1px solid transparent;
+    }
+    .note-link:hover {
+      background: #dbeafe;
+      border-color: #2563eb;
+      transform: translateY(-2px);
+    }
+    .note-link i {
+      font-size: 1.1rem;
+    }
+
     /* footer */
     .footer {
       background: white;
@@ -568,6 +672,7 @@
         <li><a href="#courses">Курсы</a></li>
         <li><a href="#certificates">Сертификаты</a></li>
         <li><a href="#projects">Проекты</a></li>
+        <li><a href="#notes">Конспекты</a></li>
         <li><a href="#about">Обо мне</a></li>
       </ul>
       <button class="mobile-menu-btn" id="menuBtn" aria-label="Меню">☰</button>
@@ -665,6 +770,138 @@
     </div>
   </section>
 
+  <!-- Notes Section -->
+  <section class="section" id="notes">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Учёба</span>
+        <h2 class="section-title">Мои <span>конспекты</span></h2>
+        <p class="section-subtitle">Заметки по курсам и изученным темам</p>
+      </div>
+      <div class="notes-grid">
+        <!-- Конспект 1: Основы бережливого производства -->
+        <div class="note-card" data-aos="fade-up">
+          <div class="note-header" onclick="toggleNote(this)">
+            <h3><i class="fas fa-leaf" style="color: #2563eb; margin-right: 10px;"></i>Основы бережливого производства (LEAN)</h3>
+            <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="note-body">
+            <h4>История LEAN</h4>
+            <ul>
+              <li><strong>1908</strong> — Генри Форд создал конвейер (потоковое производство, большие запасы).</li>
+              <li><strong>1937</strong> — В Toyota приходит Тайити Оно, начало экспериментов.</li>
+              <li><strong>1953</strong> — Первый канбан на заводе KOROMA (система вытягивания).</li>
+              <li><strong>1988</strong> — Книга "Победа машиностроения" (MIT) — термин LEAN.</li>
+              <li><strong>1996</strong> — Книга "Бережливое производство" (Джеймс Вумек, Дэниел Джонс) — 5 принципов.</li>
+              <li><strong>2000</strong> — Распространение в IT, появление Agile.</li>
+            </ul>
+
+            <h4>Что такое LEAN?</h4>
+            <p><strong>LEAN</strong> (с англ. — "худой") — бережливый, отсутствует лишнее. Тайити Оно предложил <strong>вытягивающее производство</strong> (производить в зависимости от спроса) после стажировки на заводах Ford.</p>
+
+            <h4>Правила LEAN</h4>
+            <p><strong>1. Детализация рабочего процесса</strong> — разбивка задач на мелкие, измеримые шаги.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: "Установить замок" → "Вставить замок в пазл, закрепить двумя винтами, проверить механизм".</li>
+              <li><span class="mark">Пример (IT)</span>: "Создать форму регистрации" → "Поле Имя (обяз., до 50 символов), Поле Почта (обяз., проверка @), Поле Пароль (обяз., проверка длины и цифр), кнопка 'Зарегистрироваться'".</li>
+            </ul>
+            <p><strong>2. Прямая связь "Да/Нет"</strong> — мгновенный и однозначный ответ.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: Кнопка "Наличие деталей" у кладовщика. Световые индикаторы "Да, годен" / "Нет, брак" на стенде контроля.</li>
+              <li><span class="mark">Пример (IT)</span>: Сообщения "Ожидайте ответа сервера". Чат-бот или мониторинг статуса платежного шлюза с ответом "ДА — работает" или "НЕТ — ведутся работы".</li>
+            </ul>
+            <p><strong>3. Прямой путь продукта</strong> — устранение лишних перемещений и посредников.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: Деталь → Станок 1 → Станок 2 → Станок 3 → Готовый продукт (без промежуточных складов).</li>
+              <li><span class="mark">Пример (IT)</span>: Дизайнер → Разработчик → Клиент → Тестировщик (убраны лишние менеджеры).</li>
+            </ul>
+            <p><strong>4. Улучшение снизу вверх</strong> — идеи по оптимизации поступают от сотрудников на местах.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: Оператор предлагает магнитную ленту для гаек или ящик для инструмента, начальник закупает.</li>
+              <li><span class="mark">Пример (IT)</span>: Тестировщик просит научить писать автотесты вместо ручного заполнения 10 полей. Написание скриптов для автоматизации рутинных задач.</li>
+            </ul>
+
+            <h4>Принципы LEAN</h4>
+            <p><strong>1. Определение ценности</strong> — что действительно нужно клиенту.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: Ценность — мощность, внешний вид, надёжность. Потери — ожидание, брак, оформление бумаг.</li>
+              <li><span class="mark">Пример (IT)</span>: Ценность — дизайн, форма оплаты, актуальные контакты. Потери — согласования, исправление багов, долгая загрузка.</li>
+            </ul>
+            <p><strong>2. Карта потока создания ценности (VSM)</strong> — визуализация всех этапов для выявления потерь.</p>
+            <p><strong>3. Обеспечить непрерывный поток</strong> — продукт движется без остановок и ожиданий (аналогично правилу 3).</p>
+            <p><strong>4. Вытягивание продукта (Pull)</strong> — производить только то, что требуется заказчику (в отличие от Push).</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: Красить бампер только после получения оплаченного заказа с подтвержденным цветом.</li>
+              <li><span class="mark">Пример (IT)</span>: Делать одну страницу сайта, показывать заказчику, и только после одобрения переходить к следующей.</li>
+            </ul>
+            <p><strong>5. Постоянное совершенствование (PDCA)</strong> — Plan-Do-Check-Act.</p>
+            <ul>
+              <li><span class="mark">Пример (конвейер)</span>: P — использовать магнитную ленту, D — купить и установить, C — замерить время, A — внедрить везде.</li>
+              <li><span class="mark">Пример (IT)</span>: P — написать скрипт автоматизации, D — создать и запустить, C — проверить время работы, A — установить на все компьютеры.</li>
+            </ul>
+
+            <h4>5С — система организации рабочего места</h4>
+            <ul>
+              <li><strong>Seiri (Сортировка)</strong> — разделить вещи на нужные и ненужные, избавиться от лишних.</li>
+              <li><strong>Seiton (Соблюдение порядка)</strong> — каждая вещь на своем месте, доступна и удобна.</li>
+              <li><strong>Seiso (Содержание в чистоте)</strong> — регулярная уборка и проверка.</li>
+              <li><strong>Seiketsu (Стандартизация)</strong> — создание правил и инструкций для поддержания первых трех С.</li>
+              <li><strong>Shitsuke (Совершенствование)</strong> — воспитание привычки соблюдать стандарты и постоянно их улучшать.</li>
+            </ul>
+
+            <h4>Виды потерь (MUDA)</h4>
+            <ul>
+              <li><strong>Брак</strong> — исправление ошибок, переделка.</li>
+              <li><strong>Ожидание</strong> — простой оборудования или людей.</li>
+              <li><strong>Перепроизводство</strong> — создание того, что не нужно сейчас.</li>
+              <li><strong>Излишняя обработка</strong> — выполнение работы, которая не добавляет ценности.</li>
+              <li><strong>Лишние движения</strong> — нерациональные перемещения людей.</li>
+              <li><strong>Запасы</strong> — хранение материалов или задач, которые не используются.</li>
+              <li><strong>Транспортировка</strong> — лишние перемещения материалов или информации.</li>
+              <li><strong>Неиспользованный потенциал</strong> — неприменение знаний и навыков сотрудников.</li>
+            </ul>
+
+            <h4>Быстрая переналадка (SMED)</h4>
+            <p>Снижение времени перехода между задачами за счет перевода <strong>внутренних операций</strong> (делать когда процесс остановлен) в <strong>внешние</strong> (делать параллельно).</p>
+            <ul>
+              <li><span class="mark">Пример (производство)</span>: Пока станок работает, оператор подготавливает инструмент и заготовки для следующей детали.</li>
+              <li><span class="mark">Пример (IT)</span>: Пока сервер обрабатывает запросы, разработчик кеширует зависимости и собирает образ для следующего деплоя.</li>
+            </ul>
+
+            <h4>Канбан</h4>
+            <p>Основан на принципе <strong>вытягивания</strong>: заказчик (следующий процесс) вытягивает продукт у поставщика (предыдущего процесса). Визуализация работы на доске с ограничением незавершенных задач.</p>
+
+            <h4>OEE и TPM</h4>
+            <p><strong>Общая эффективность оборудования (OEE)</strong> = Доступность × Производительность × Качество.</p>
+            <ul>
+              <li><strong>Доступность</strong> = (Плановое время − Даунтайм) / Плановое время.</li>
+              <li><strong>Производительность</strong> — соотношение фактической и идеальной скорости.</li>
+              <li><strong>Качество</strong> — доля годных изделий.</li>
+            </ul>
+            <p><strong>TPM (Total Productive Maintenance)</strong> — система всеобщего ухода за оборудованием, направленная на предотвращение поломок и потерь.</p>
+          </div>
+        </div>
+
+        <!-- Конспект 2: Ссылка на Google Colab -->
+        <div class="note-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="note-header" onclick="toggleNote(this)">
+            <h3><i class="fas fa-robot" style="color: #7c3aed; margin-right: 10px;"></i>Конспект в Google Colab</h3>
+            <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="note-body">
+            <p>Этот конспект доступен для чтения в Google Colab. Нажмите на кнопку ниже, чтобы открыть его.</p>
+            <a href="https://colab.research.google.com/drive/1oTz45CxOG3rJGWe6n3syJ9BIEsemmAlP?usp=sharing" target="_blank" class="note-link">
+              <i class="fas fa-external-link-alt"></i> Открыть конспект в Colab
+            </a>
+            <p style="margin-top: 16px; font-size: 0.9rem; color: #64748b;">
+              <i class="fas fa-info-circle"></i> Для просмотра может потребоваться вход в Google-аккаунт.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
@@ -701,7 +938,7 @@
         <div><p class="footer-name">Ибрагим Чопанов</p><p class="footer-desc">Студент-разработчик</p></div>
         <div class="footer-social">
           <a href="https://github.com/beliu777" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="ibragimtchopanov@yandex.ru" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:ibragimtchopanov@yandex.ru" class="social-link"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
       <div class="footer-bottom"><p>© 2026 Ибрагим Чопанов. Все права защищены.</p></div>
@@ -712,19 +949,29 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 700, once: true, offset: 40 });
+
     // mobile menu
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
     menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
-    // close on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('active'));
     });
+
     // scroll nav
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 80);
     });
+
+    // toggle notes
+    function toggleNote(headerElement) {
+      const body = headerElement.nextElementSibling;
+      const icon = headerElement.querySelector('.toggle-icon i');
+      body.classList.toggle('open');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    }
   </script>
 </body>
 </html>
